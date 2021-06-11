@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/mainView"
+	android:background="#FBF8F8"
+	android:clipToPadding="true"
+	android:gravity="top">
+
+	<EditText
+		android:id="@+id/txtCalc"
+		android:layout_width="fill_parent"
+		android:layout_height="116dp"
+		android:gravity="right"
+		android:inputType="none"
+		android:singleLine="true"
+		android:text="0"
+		android:textSize="56sp"
+		android:textStyle="normal"
+		android:typeface="normal"
+		android:background="#FFFFFF"
+		android:layout_marginTop="0dp"
+		android:layout_gravity="top"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:background="#FFFFFF">
+
+		<Button
+			android:id="@+id/nbtn1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="Pi"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/nbtn7"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="e"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/expSQ"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="³√"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/expEX"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="x^"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnBS"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="←"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:background="#FFFFFF">
+
+		<Button
+			android:id="@+id/nbtn2"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="Sin"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/nbtn3"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="Cos"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/nbtn4"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="Tan"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/nbtn5"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="Ln"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/nbtn6"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="ex"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:background="#FFFFFF">
+
+		<Button
+			android:id="@+id/btnSeven"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="7"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnEight"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="8"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnNine"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="9"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnDivide"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="÷"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnC"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="AC"
+			android:background="@drawable/redbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:background="#FFFFFF">
+
+		<Button
+			android:id="@+id/btnFour"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="4"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnFive"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="5"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnSix"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="6"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnMultiply"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="x"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnPerc"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="%"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:background="#FFFFFF">
+
+		<Button
+			android:id="@+id/btnOne"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="1"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnTwo"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="2"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:clickable="true"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnThree"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="3"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnMinus"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="-"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnSqrRoot"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="√"
+			android:background="@drawable/roundbutton"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:background="#FFFFFF">
+
+		<Button
+			android:id="@+id/btnZero"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_span="2"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="0"
+			android:background="@drawable/roundbutton"
+			android:textSize="23sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnDecimal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="."
+			android:background="@drawable/roundbutton"
+			android:textSize="23sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnPM"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="+/-"
+			android:background="@drawable/roundbutton"
+			android:textSize="23sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnPlus"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="+"
+			android:background="@drawable/roundbutton"
+			android:textSize="23sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+		<Button
+			android:id="@+id/btnEquals"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0px"
+			android:text="="
+			android:background="@drawable/roundbutton"
+			android:textSize="23sp"
+			android:textStyle="bold"
+			android:typeface="serif"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
