@@ -651,5 +651,6 @@ import android.view.*;
 		txtCalc.setText("0");
 		txtCalc.setSelection(1);
 		operator = 1;
+		System.out.println("Reset Successful");
 	}
 }
