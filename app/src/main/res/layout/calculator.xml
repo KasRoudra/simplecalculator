@@ -13,16 +13,17 @@
 		android:id="@+id/txtCalc"
 		android:layout_width="fill_parent"
 		android:layout_height="116dp"
+		android:layout_gravity="top"
+		android:layout_marginTop="0dp"
+		android:background="#FFFFFF"
 		android:gravity="right"
 		android:inputType="none"
+		android:maxLength="16"
 		android:singleLine="true"
 		android:text="0"
 		android:textSize="56sp"
 		android:textStyle="normal"
-		android:typeface="normal"
-		android:background="#FFFFFF"
-		android:layout_marginTop="0dp"
-		android:layout_gravity="top"/>
+		android:typeface="normal" />
 
 	<LinearLayout
 		android:layout_width="fill_parent"
@@ -49,13 +50,13 @@
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
+			android:background="@drawable/roundbutton"
 			android:gravity="center"
 			android:padding="0px"
 			android:text="e"
-			android:background="@drawable/roundbutton"
 			android:textSize="24sp"
 			android:textStyle="bold"
-			android:typeface="serif"/>
+			android:typeface="serif" />
 
 		<Button
 			android:id="@+id/expSQ"
@@ -180,7 +181,7 @@
 		android:background="#FFFFFF">
 
 		<Button
-			android:id="@+id/btnSeven"
+			android:id="@+id/btn7"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -193,7 +194,7 @@
 			android:typeface="serif"/>
 
 		<Button
-			android:id="@+id/btnEight"
+			android:id="@+id/btn8"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -206,7 +207,7 @@
 			android:typeface="serif"/>
 
 		<Button
-			android:id="@+id/btnNine"
+			android:id="@+id/btn9"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -254,7 +255,7 @@
 		android:background="#FFFFFF">
 
 		<Button
-			android:id="@+id/btnFour"
+			android:id="@+id/btn4"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -267,7 +268,7 @@
 			android:typeface="serif"/>
 
 		<Button
-			android:id="@+id/btnFive"
+			android:id="@+id/btn5"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -280,7 +281,7 @@
 			android:typeface="serif"/>
 
 		<Button
-			android:id="@+id/btnSix"
+			android:id="@+id/btn6"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -328,7 +329,7 @@
 		android:background="#FFFFFF">
 
 		<Button
-			android:id="@+id/btnOne"
+			android:id="@+id/btn1"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -341,7 +342,7 @@
 			android:typeface="serif"/>
 
 		<Button
-			android:id="@+id/btnTwo"
+			android:id="@+id/btn2"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -355,7 +356,7 @@
 			android:typeface="serif"/>
 
 		<Button
-			android:id="@+id/btnThree"
+			android:id="@+id/btn3"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
@@ -403,7 +404,7 @@
 		android:background="#FFFFFF">
 
 		<Button
-			android:id="@+id/btnZero"
+			android:id="@+id/btn0"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_span="2"
